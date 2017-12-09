@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.27004.2009
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ATOE", "ATOE\ATOE.csproj", "{BE932AF2-AF5A-4FD1-BB4B-C60B5B3A27D6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ATOEBackend", "ATOEBackend\ATOEBackend.csproj", "{DF154403-8CA8-46B7-9D2B-8B278CA1CB67}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{BE932AF2-AF5A-4FD1-BB4B-C60B5B3A27D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BE932AF2-AF5A-4FD1-BB4B-C60B5B3A27D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BE932AF2-AF5A-4FD1-BB4B-C60B5B3A27D6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DF154403-8CA8-46B7-9D2B-8B278CA1CB67}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF154403-8CA8-46B7-9D2B-8B278CA1CB67}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF154403-8CA8-46B7-9D2B-8B278CA1CB67}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF154403-8CA8-46B7-9D2B-8B278CA1CB67}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
