@@ -19,6 +19,7 @@ namespace ATOEBackend.Controllers
         public SingleResult<Project> Get(int key)
         {
             IQueryable<Project> result = db.Projects.Where(p => p.ProjectId == key);
+
             return SingleResult.Create(result);
         }
 
