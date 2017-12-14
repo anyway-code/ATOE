@@ -117,9 +117,20 @@
   <ItemGroup>
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\ProjectsController.cs" />
+    <Compile Include="Controllers\ResourcesController.cs" />
+    <Compile Include="Controllers\ResourceUsagesController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201712100728396_InitialCreate.cs" />
+    <Compile Include="Migrations\201712100728396_InitialCreate.Designer.cs">
+      <DependentUpon>201712100728396_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201712100744194_AddProjectNum.cs" />
+    <Compile Include="Migrations\201712100744194_AddProjectNum.Designer.cs">
+      <DependentUpon>201712100744194_AddProjectNum.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Project.cs" />
     <Compile Include="Models\ProjectContext.cs" />
     <Compile Include="Models\Resource.cs" />
@@ -137,6 +148,14 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201712100728396_InitialCreate.resx">
+      <DependentUpon>201712100728396_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201712100744194_AddProjectNum.resx">
+      <DependentUpon>201712100744194_AddProjectNum.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

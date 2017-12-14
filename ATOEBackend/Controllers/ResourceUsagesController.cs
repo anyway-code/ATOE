@@ -6,18 +6,18 @@ using System.Web.OData;
 namespace ATOEBackend.Controllers
 {
     [EnableQuery]
-    public class ProjectsController : ODataController
+    public class ResourceUsagesController : ODataController
     {
         private ProjectContext db = new ProjectContext();
 
-        public IQueryable<Project> Get()
+        public IQueryable<ResourceUsage> Get()
         {
-            return db.Projects;
+            return db.ResourceUsages;
         }
-        
-        public SingleResult<Project> Get(int key)
+
+        public SingleResult<ResourceUsage> Get(int key)
         {
-            IQueryable<Project> result = db.Projects.Where(p => p.ProjectId == key);
+            IQueryable<ResourceUsage> result = db.ResourceUsages.Where(p => p.ResourceUsageId == key);
             return SingleResult.Create(result);
         }
 
