@@ -2,6 +2,7 @@
 using System.Data.Entity;
 using System.Data.Entity.Infrastructure;
 using System.Linq;
+using System.Net;
 using System.Threading.Tasks;
 using System.Web.Http;
 using System.Web.OData;
@@ -97,6 +98,18 @@ namespace ATOEBackend.Controllers
                 }
             }
             return Updated(update);
+        }
+
+        public async Task<IHttpActionResult> Delete([FromODataUri] int key)
+        {
+            var project = await db.Projects.FindAsync(key);
+            if (project == null)
+            {
+                return NotFound();
+            }
+            db.Projects.Remove(project);
+            await db.SaveChangesAsync();
+            return StatusCode(HttpStatusCode.NoContent);
         }
 
         protected override void Dispose(bool disposing)
